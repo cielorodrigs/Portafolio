@@ -1,0 +1,376 @@
+:root {
+	--color-primario: #1f1d2c;
+	--color-secundario: #242635;
+	--color-resaltador: #f1a600;
+	--color-fuente-primaria: #ffffff;
+	--color-fuente-secundaria: #e5e5e5;
+}
+html {
+	box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: var(--color-primario);
+	font-family: "Inter", sans-serif;
+	color: var(--color-fuente-primaria);
+	box-sizing: border-box;
+}
+/* TEXTO */
+h1 {
+	font-size: 50px;
+	font-weight: 600;
+}
+h2 {
+	font-size: 32px;
+	font-weight: 600;
+	text-align: center;
+}
+h3 {
+	font-size: 18px;
+	font-weight: 400;
+}
+span {
+	color: var(--color-resaltador);
+}
+p {
+	color: var(--color-fuente-secundaria);
+}
+/* LOGOS AND ICONS*/
+.logo-menu {
+	margin: 10px;
+}
+.social-network-logo {
+	width: 35px;
+}
+.logos-empresas {
+	width: 56px;
+}
+.logos-contacto {
+	width: 80px;
+}
+/* HEADER */
+header {
+	margin-bottom: 5rem;
+   background-image: url("/Portafolio 2/Vectores/Rectangle 34-1.svg");
+   background-repeat: no-repeat;
+   background-position: right top;
+}
+.nav-mobile {
+	display: flex;
+	justify-content: end;
+}
+.nav-desktop {
+	display: none;
+}
+.profile {
+	row-gap: 20px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+}
+.profile-name {
+	margin: 0;
+}
+.profile-info {
+	font-size: 1.2rem;
+	padding: 0 20% 0 20%;
+	display: flex;
+	flex-direction: column;
+}
+.profile-info > span {
+	margin-top: 1rem;
+}
+.social-icons {
+	display: flex;
+	gap: 15px;
+}
+.profile-image {
+	border-radius: 10px;
+}
+
+/* SECCION ACERCA DE MI */
+.about-me-section {
+	padding: 3rem 0;
+	background-color: var(--color-secundario);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	text-align: center;
+	row-gap: 2rem;
+}
+.about-me-section > p {
+	padding: 5%;
+	line-height: 1.5rem;
+}
+/* SECCION EXPERIENCIA */
+.experience-section {
+	margin: 3rem 0;
+	padding: 0 3rem;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto auto auto auto;
+	row-gap: 2rem;
+	column-gap: 2rem;
+}
+.experience-section h2 {
+	grid-column: 1/4;
+}
+/* SECCION MIS HABILIDADES */
+.skills-section {
+	background-image: url("/Portafolio 2/Vectores/Rectangle 34-1.svg");
+	background-repeat: no-repeat;
+   background-position: left center;
+   margin: 3rem 0;
+	padding: 3rem 1.5rem;
+	display: grid;
+	grid-template-columns: 2fr 4fr;
+	grid-template-rows: auto auto auto auto auto;
+	row-gap: 30px;
+}
+.skills-section h2 {
+	grid-column: 1/3;
+}
+.skills-section span {
+	font-weight: 600;
+	font-size: 2rem;
+	text-align: center;
+}
+.skills-section h3 {
+	display: flex;
+	align-items: center;
+}
+/* .vector-skills-section {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 185%;
+} */
+/* SECCION MI PORTAFOLIO */
+.portfolio-section {
+	margin: 3rem 0;
+	display: flex;
+	flex-direction: column;
+	row-gap: 4rem;
+	align-items: center;
+}
+.portfolio-section img {
+	width: 85%;
+	box-shadow: 0px -21px 0px 10px rgba(241, 166, 0, 1);
+	-webkit-box-shadow: 0px -21px 0px 10px rgba(241, 166, 0, 1);
+	-moz-box-shadow: 0px -21px 0px 10px rgba(241, 166, 0, 1);
+}
+.portfolio-section .alt-boxshadow {
+	box-shadow: 0px -21px 0px 10px rgba(36, 38, 53, 1);
+	-webkit-box-shadow: 0px -21px 0px 10px rgba(36, 38, 53, 1);
+	-moz-box-shadow: 0px -21px 0px 10px rgba(36, 38, 53, 1);
+}
+/* FOOTER */
+footer {
+	height: 80vh;
+	background-color: var(--color-secundario);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	row-gap: 2rem;
+}
+footer div {
+	text-align: center;
+	margin-bottom: 4rem;
+}
+@media (min-width: 1140px) {
+	/* TEXTO */
+	h1 {
+		font-size: 3rem;
+		font-weight: 600;
+	}
+	h2 {
+		font-size: 2rem;
+		font-weight: 600;
+		text-align: center;
+	}
+	h3 {
+		font-size: 1.5rem;
+		font-weight: 400;
+	}
+	span {
+		color: var(--color-resaltador);
+	}
+	p {
+		color: var(--color-fuente-secundaria);
+	}
+	/* LOGOS AND ICONS*/
+	.logo-menu {
+		margin: 10px;
+	}
+	.social-network-logo {
+		width: 35px;
+	}
+	.logos-empresas {
+		width: 7rem;
+	}
+	.logos-contacto {
+		width: 80px;
+	}
+	/* HEADER */
+   header {
+      background-image: url("/Portafolio 2/Vectores/Rectangle 34-1.svg");
+      background-repeat: no-repeat;
+      background-position: right top;
+      background-size: auto 90%;
+   }
+	.nav-mobile {
+		display: none;
+	}
+	.nav-desktop {
+		margin-right: 15%;
+		display: flex;
+		justify-content: flex-end;
+	}
+	.nav-desktop a {
+		padding: 2rem;
+		text-decoration: none;
+		color: var(--color-fuente-primaria);
+	}
+	.profile {
+		margin: 0 10%;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		column-gap: 3rem;
+	}
+	.profile-info {
+		padding: 0;
+	}
+	.profile-image {
+		width: 70%;
+		margin: auto;
+		border-radius: 10px;
+		grid-column: 2/3;
+		grid-row: 1/4;
+	}
+	.vector-nav {
+		width: 20%;
+		border-bottom-left-radius: 15px;
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		right: 0;
+	}
+	/* SECCION ACERCA DE MI */
+	.about-me-section {
+		padding: 3rem;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 2rem 1fr 1fr;
+	}
+	.about-me-section h2,
+	.about-me-section p {
+		grid-column: 1/3;
+	}
+	.about-me-section div {
+		margin: auto auto;
+		width: 20rem;
+	}
+	/* SECCION EXPERIENCIA */
+	.experience-section {
+		width: 50%;
+		margin: 5rem auto;
+		padding: 0;
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-template-rows: auto auto auto auto;
+		row-gap: 2rem;
+		column-gap: 2rem;
+	}
+	.experience-section h2 {
+		grid-column: 1/4;
+	}
+	.experience-section h3 {
+		margin: auto auto;
+	}
+	.experience-section img,
+	.experience-section div {
+		margin: auto 0;
+	}
+	/* SECCION MIS HABILIDADES */
+	.skills-section {
+      background-image: url("/Portafolio 2/Vectores/Rectangle 34-1.svg");
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: auto 100%;
+		margin: 3rem 0;
+		padding: 3rem 1.5rem;
+		display: grid;
+		grid-template-columns: 2fr 4fr;
+		grid-template-rows: auto auto auto auto auto;
+		row-gap: 30px;
+	}
+	.skills-section h2 {
+		grid-column: 1/3;
+	}
+	.skills-section span {
+		font-weight: 600;
+		font-size: 4rem;
+		text-align: center;
+	}
+	.skills-section h3 {
+		display: flex;
+		align-items: center;
+	}
+	/* SECCION MI PORTAFOLIO */
+	.portfolio-section {
+		width: 90%;
+		margin: 15rem auto;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 5rem 1fr 1fr;
+	}
+	.portfolio-section h2 {
+		grid-column: 1/3;
+	}
+	.portfolio-section img {
+		margin: auto auto;
+		width: 85%;
+		box-shadow: 0px -21px 0px 10px rgba(241, 166, 0, 1);
+		-webkit-box-shadow: 0px -21px 0px 10px rgba(241, 166, 0, 1);
+		-moz-box-shadow: 0px -21px 0px 10px rgba(241, 166, 0, 1);
+	}
+	.portfolio-section .alt-boxshadow {
+		box-shadow: 0px -21px 0px 10px rgba(36, 38, 53, 1);
+		-webkit-box-shadow: 0px -21px 0px 10px rgba(36, 38, 53, 1);
+		-moz-box-shadow: 0px -21px 0px 10px rgba(36, 38, 53, 1);
+	}
+	/* FOOTER */
+	footer {
+		height: 50vh;
+		flex-direction: column;
+		row-gap: 0;
+		align-content: space-between;
+		row-gap: 4rem;
+	}
+	footer div {
+		width: 50%;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+	}
+	footer div div {
+		display: block;
+	}
+}
